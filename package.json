@@ -14,6 +14,7 @@
   },
   "devDependencies": {
     "@types/jest": "^24.0.19",
+    "@types/ts-nameof": "^4.2.1",
     "@typescript-eslint/eslint-plugin": "^2.33.0",
     "@typescript-eslint/parser": "^2.33.0",
     "@vue/cli-plugin-babel": "^4.4.0",
@@ -28,6 +29,7 @@
     "eslint-plugin-prettier": "^3.1.3",
     "eslint-plugin-vue": "^6.2.2",
     "prettier": "^1.19.1",
+    "ts-nameof": "^5.0.0",
     "typescript": "~3.9.3",
     "vue-template-compiler": "^2.6.11"
   },
