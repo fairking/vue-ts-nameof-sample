@@ -2,6 +2,7 @@ const path = require("path");
 
 module.exports = {
     chainWebpack: config => {
+
         config.module
             .rule('ts')
             .exclude.add(/node_modules/)
@@ -14,7 +15,7 @@ module.exports = {
                 // Transformer functions do not work with happy pack mode due to process forking, see:
                 // https://github.com/TypeStrong/ts-loader#getcustomtransformers--program-program---before-transformerfactory-after-transformerfactory--
                 getCustomTransformers: path.resolve(__dirname, 'vue-ts-nameof.js'),
-                appendTsSuffixTo: ['\\.vue$'],
+                appendTsSuffixTo: [/\.vue$/],
                 happyPackMode: true
             })
             .end();

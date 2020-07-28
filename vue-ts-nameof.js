@@ -1,4 +1,4 @@
-const tsNameof = import("ts-nameof");
+const tsNameof = require("ts-nameof");
 
 module.exports = () => ({
 	before: [tsNameof]

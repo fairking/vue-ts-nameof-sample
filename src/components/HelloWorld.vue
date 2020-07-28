@@ -25,7 +25,7 @@
               myClassName: nameof<MyClass>(),
               myClassPropName: nameof<MyClass>(x => x.name),
               myClassSubPropName: nameof<MyClass>(x => x.child?.description),
-              myEnumName: nameof<MyClass>(),
+              myEnumName: nameof<MyEnum>(),
               myEnumValueName: nameof(MyEnum.Option1),
               myClassFunc: function (func?: (obj: MyClass) => any): string { return nameof<MyClass>(func); },
           };
